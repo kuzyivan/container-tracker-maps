@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_93ab5d9f20c8e1953bd9b5d3622db168 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_93ab5d9f20c8e1953bd9b5d3622db168" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_93ab5d9f20c8e1953bd9b5d3622db168 = L.map(
+                "map_93ab5d9f20c8e1953bd9b5d3622db168",
+                {
+                    center: [52.035081, 47.802255],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d2b404ac076b7fe494311a9c906fe730 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_93ab5d9f20c8e1953bd9b5d3622db168);
+        
+    
+            var marker_bfa71b4ce61c239e7d084be65fb0b256 = L.marker(
+                [52.035081, 47.802255],
+                {}
+            ).addTo(map_93ab5d9f20c8e1953bd9b5d3622db168);
+        
+    
+        var popup_ebf94e49be11df92177c9138fcbe4f15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89c35cdc115115a2b3a5e3ff8f5ca4e8 = $(`<div id="html_89c35cdc115115a2b3a5e3ff8f5ca4e8" style="width: 100.0%; height: 100.0%;">Контейнер №TWDU7003199 Маршрут: УГЛОВАЯ (ЭКСП.) (982300) → ЭЛЕКТРОУГЛИ (230600) Станция: ДЗЕРЖИНСКАЯ-НОВАЯ Операция: Вывоз контейнера с контейнерного пункта (49) Дата операции: 10.04.2025 10:29 Номер накладной: ЭБ453379 Данные актуальны на: 23.04.2025 09:49</div>`)[0];
+            popup_ebf94e49be11df92177c9138fcbe4f15.setContent(html_89c35cdc115115a2b3a5e3ff8f5ca4e8);
+        
+
+        marker_bfa71b4ce61c239e7d084be65fb0b256.bindPopup(popup_ebf94e49be11df92177c9138fcbe4f15)
+        ;
+
+        
+    
+    
+            marker_bfa71b4ce61c239e7d084be65fb0b256.bindTooltip(
+                `<div>
+                     TWDU7003199 📦
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
